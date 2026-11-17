@@ -1,0 +1,22 @@
+{
+  "name": "firstnodejs",
+  "version": "1.0.0",
+  "description": "Node.js fundamentals: class examples and the Bank Server assignment",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "nodemon --env-file=.env bank-server/starter/server.js",
+    "test": "node --test bank-server/test/bank.test.js",
+    "example:modules": "node examples/01-modules/index.js",
+    "example:static": "nodemon --env-file=.env examples/03-static-pages/server.js",
+    "example:stream": "nodemon --env-file=.env examples/04-streaming/server0.js",
+    "example:pages": "nodemon --env-file=.env --ignore 'examples/05-html-router-json/data/' examples/05-html-router-json/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10"
+  }
+}
